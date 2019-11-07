@@ -2,14 +2,14 @@
 exports.seed = function (knex) {
 
   return knex('ingredients').insert([
-    { ingredients: 'sugar' },
-    { ingredients: 'flour' },
-    { ingredients: 'eggs' },
-    { ingredients: 'rice' },
-    { ingredients: 'carrots' },
-    { ingredients: 'oil' },
-    { ingredients: 'tomatoes' },
-    { ingredients: 'seasoning cubes' },
-    { ingredients: 'salt' },
+    { ingredient_name: 'sugar' },
+    { ingredient_name: 'flour' },
+    { ingredient_name: 'eggs' },
+    { ingredient_name: 'rice' },
+    { ingredient_name: 'carrots' },
+    { ingredient_name: 'oil' },
+    { ingredient_name: 'tomatoes' },
+    { ingredient_name: 'seasoning cubes' },
+    { ingredient_name: 'salt' },
   ]);
 };

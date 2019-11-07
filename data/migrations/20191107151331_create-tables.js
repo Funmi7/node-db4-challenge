@@ -13,7 +13,7 @@ exports.up = function(knex) {
   })
   .createTable('recipes_ingredients', table => {
       table.increments()
-      table.integer('recipes_id')
+      table.integer('recipe_id')
       .unsigned()
       .notNullable()
       .references('id')
@@ -52,6 +52,6 @@ exports.down = function(knex) {
 	return knex.schema
 	.dropTableIfExists('steps')
 	.dropTableIfExists('recipes_ingredients')
-	.dropTableIfExits('ingredients')
+	.dropTableIfExists('ingredients')
 	.dropTableIfExists('recipes')
 };
